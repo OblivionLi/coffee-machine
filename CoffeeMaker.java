@@ -72,13 +72,6 @@ public class CoffeeMaker {
         return true;
     }
 
-    public boolean isMachineRequiringIngredients() {
-        return this.waterAvailable < 200 ||
-                this.milkAvailable < 75 ||
-                this.coffeeBeansAvailable < 12 ||
-                this.noOfDisposableCups == 0;
-    }
-
     @Override
     public String toString() {
         return "The coffee machine has:\n" +
